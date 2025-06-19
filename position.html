@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky header</title>
+    <style>
+        .header {
+            position: sticky;
+            top: 0;
+            background: darkblue;
+            color: white;
+            padding: 10px;
+        }
+        div {
+            position: relative;
+            padding-left: 20px;
+            padding-top: 20px;
+            background: yellow;
+            display: inline-flex;
+
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: darkgray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+         <a href="#home" class="logo">HARIRAM RAMDASS</a>
+        <nav class="navbar">
+            <a href="#home">HOME </a>
+            <a href="#about">ABOUT </a>
+            <a href="#projects">PROJECT </a>
+            <a href="#contact">CONTACT </a>
+
+        </nav>
+    </header>
+    <div>
+        <p>I'm a relative box</p>
+    </div>
+</body>
+<footer>"I'm fixed at the bottom!"</footer>
+</html>
